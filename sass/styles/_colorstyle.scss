@@ -1,0 +1,11 @@
+//Shadows
+$shadowBlack: 0 3px 10px #04060D36;
+$shadowWhite: 0 3px 10px #AEB3BA50;
+$shadowBlue: 0 0 6px #09A7FF50;
+$shadowRed: 0 0 6px #FF215650;
+$shadowYellow: 0 0 4px $yellow;
+
+//Gradiente
+$gradientVertical: linear-gradient(to bottom, $blue, $red);
+$gradientDeg: linear-gradient(to bottom right, $blue, $red);
+$gradientHorizontal: linear-gradient(to right, $blue, $red);
