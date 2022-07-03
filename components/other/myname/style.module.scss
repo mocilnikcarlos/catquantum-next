@@ -1,0 +1,16 @@
+@import "../../../sass/styles/colors";
+@import "../../../sass/styles/fonts";
+
+.boxmyname {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.textmyname {
+    font-family: $text;
+    margin-left: .75em;
+    font-size: .875em;
+    font-weight: $regular;
+    color: $gray;
+}
