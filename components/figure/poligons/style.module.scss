@@ -1,0 +1,15 @@
+@import "../../../sass/styles/colors";
+
+.linehorizontal {
+    width: 1.563em;
+    height: 0.188em;
+    background-color: $gray;
+    opacity: .5;
+}
+
+.linevertical {
+    width: .188em;
+    height: 3.125em;
+    background-color: $gray;
+    opacity: .5;
+}
