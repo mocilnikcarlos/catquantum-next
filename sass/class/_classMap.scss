@@ -1,0 +1,7 @@
+@import "../maps/maps";
+
+@each $key, $value in $opacity {
+    .opacity-#{$key}{
+        opacity: $value;
+    }
+}

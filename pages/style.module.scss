@@ -7,4 +7,13 @@
 
 .contenthero {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infohero {
+    width: fit-content;
+    display: flex;
+    gap: 3.125em;
 }

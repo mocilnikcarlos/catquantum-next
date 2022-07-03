@@ -1,0 +1,23 @@
+@import "../../../sass/styles/colors";
+@import "../../../sass/styles/fonts";
+
+.boxinfohero {
+    width: fit-content;
+    display: flex;
+    gap: 1em;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: .25em;
+    min-height: 100%;
+}
+
+.text {
+    font-family: $text;
+    font-size: .875em;
+    font-weight: $medium;
+    color: $gray;
+}
