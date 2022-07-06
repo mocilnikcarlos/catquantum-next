@@ -1,0 +1,126 @@
+@import "../../../sass/styles/colors";
+@import "../../../sass/styles/fonts";
+
+// Generic header
+.header {
+    width: 100%;
+    min-height: 6.25em;
+    position: fixed;
+    z-index: 100;
+}
+
+.contentheader {
+    width: 80%;
+    margin: auto;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scrollon {
+    background: $background;
+    box-shadow: 0 3px 10px $dark;
+    transition: 200ms ease-in-out;
+}
+
+.scrolloff {
+    background: transparent;
+    transition: 200ms ease-in-out;
+}
+
+// List ul
+.listlink {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 2.938em;
+    width: fit-content;
+}
+
+// Btn navbar
+.mask {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    line-height: 1.25em;
+    height: 1.25em;
+    overflow: hidden;
+
+    &:hover .containerlink{
+        transform: translateY(-1.25em);
+    }
+
+    &:hover .textup{
+        transform: rotate(20deg);
+    }
+
+    &:hover .textdown{
+        transform: rotate(0);
+    }
+}
+
+.containerlink{
+    transition: transform 300ms ease;
+}
+
+.textlink {
+    display: block;
+    transition: transform 300ms ease;
+    font-size: 1.25em;
+    font-family: $text;
+    font-weight: $regular;
+    color: $white;
+    letter-spacing: .063em;
+}
+
+.textup {
+    transform-origin: right center;
+}
+
+.textdown {
+    transform-origin: left center;
+    transform: rotate(20deg);
+}
+
+// Logo
+.logo text {
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        filter: drop-shadow(0 0 6px $blue);
+        transition: 300ms ease-in-out;
+    }
+}
+
+.logo:hover g g:nth-child(4) {
+    animation: myAnim 1s ease 0s infinite alternate forwards;
+    ;
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    33% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
