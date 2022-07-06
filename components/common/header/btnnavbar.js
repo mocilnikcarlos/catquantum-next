@@ -4,7 +4,7 @@ import style from "./style.module.scss";
 
 export default function BtnNavbar({ placeholder, page }) {
   return (
-    <Link href={page}>
+    <Link href="/">
       <a className={style.mask}>
         <div className={style.containerlink}>
           <span className={`${style.textlink} ${style.textup}`}>
