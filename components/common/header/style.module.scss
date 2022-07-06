@@ -88,7 +88,7 @@
     transition: 300ms ease-in-out;
 
     &:hover {
-        filter: drop-shadow(0 0 6px $blue);
+        filter: drop-shadow(0 0 5px $blue);
         transition: 300ms ease-in-out;
     }
 }
