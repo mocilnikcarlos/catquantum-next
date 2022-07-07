@@ -10,7 +10,7 @@ export default function Navbar() {
         <ul className={style.listlink}>
           {dataNav.getNavLink.map((item) => (
             <li key={item.id}>
-              <BtnNavbar placeholder={item.target} />
+              <BtnNavbar placeholder={item.target} page={item.to} />
             </li>
           ))}
         </ul>
