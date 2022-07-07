@@ -1,5 +1,4 @@
 import Logo from "assets/svg/logo";
-import Navbar from "./navbar";
 
 import Link from "next/link";
 
@@ -20,7 +19,6 @@ export default function Header() {
             <Logo className={style.logo} />
           </a>
         </Link>
-        <Navbar />
       </div>
     </header>
   );
