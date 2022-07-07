@@ -1,6 +1,6 @@
-import Logo from "assets/svg/logo";
-import Link from "next/link";
-import Navbar from "./navbar";
+// import Logo from "assets/svg/logo";
+// import Link from "next/link";
+// import Navbar from "./navbar";
 
 import style from "./style.module.scss";
 import useHeader from "hooks/useHeader";
@@ -13,14 +13,14 @@ export default function Header() {
         navColor ? style.scrollon : style.scrolloff
       }`}
     >
-      <div className={style.contentheader}>
+      {/* <div className={style.contentheader}>
         <Link href="/">
           <a>
             <Logo className={style.logo} />
           </a>
         </Link>
         <Navbar />
-      </div>
+      </div> */}
     </header>
   );
 }
