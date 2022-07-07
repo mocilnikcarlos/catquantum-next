@@ -38,51 +38,6 @@
     width: fit-content;
 }
 
-// Btn navbar
-.mask {
-    position: relative;
-    width: fit-content;
-    display: flex;
-    line-height: 1.25em;
-    height: 1.25em;
-    overflow: hidden;
-
-    &:hover .containerlink{
-        transform: translateY(-1.25em);
-    }
-
-    &:hover .textup{
-        transform: rotate(20deg);
-    }
-
-    &:hover .textdown{
-        transform: rotate(0);
-    }
-}
-
-.containerlink{
-    transition: transform 300ms ease;
-}
-
-.textlink {
-    display: block;
-    transition: transform 300ms ease;
-    font-size: 1.25em;
-    font-family: $text;
-    font-weight: $regular;
-    color: $white;
-    letter-spacing: .063em;
-}
-
-.textup {
-    transform-origin: right center;
-}
-
-.textdown {
-    transform-origin: left center;
-    transform: rotate(20deg);
-}
-
 // Logo
 .logo text {
     transition: 300ms ease-in-out;
