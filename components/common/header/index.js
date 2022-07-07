@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import style from "./style.module.scss";
 import useHeader from "hooks/useHeader";
+import Navbar from "./navbar";
 
 export default function Header() {
   const navColor = useHeader();
@@ -14,11 +15,12 @@ export default function Header() {
       }`}
     >
       <div className={style.contentheader}>
-        <Link href="/">
+        <Link href="/" aria-label="Cat Quantum Design">
           <a>
             <Logo className={style.logo} />
           </a>
         </Link>
+        <Navbar />
       </div>
     </header>
   );
