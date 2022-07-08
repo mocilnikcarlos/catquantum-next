@@ -13,7 +13,7 @@ import UserSpeak from "assets/svg/userSpeack";
 import Idea from "assets/svg/idea";
 import DataProt from "assets/svg/dataProt";
 import AbTesting from "assets/svg/abTesting";
-import TitleWebLineShortRight from "components/common/titleweb";
+import { TitleWebLineShortRight } from "components/common/titleweb";
 
 export default function Home() {
   return (

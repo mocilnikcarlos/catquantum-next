@@ -8,12 +8,12 @@ export default function CardWork({ title, text, icon }) {
           <div className={style.iconcircle}>
             <div className={style.icon}>{icon}</div>
           </div>
-          <span className={`${style.titlecircle} ${style.titlecircleup}`}>
+          <p className={`${style.titlecircle} ${style.titlecircleup}`}>
             {text}
-          </span>
-          <span className={`${style.titlecircle} ${style.titlecircledown}`}>
+          </p>
+          <h3 className={`${style.titlecircle} ${style.titlecircledown}`}>
             {title}
-          </span>
+          </h3>
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 import style from "./style.module.scss";
 
-export default function TitleWebLineShortRight({ placeholder }) {
+const TitleWebLineShortRight = ({ placeholder }) => {
   return (
     <>
       <div className={style.boxtitleweb}>
@@ -12,4 +12,20 @@ export default function TitleWebLineShortRight({ placeholder }) {
       </div>
     </>
   );
-}
+};
+
+const TitleWebLineShortLeft = ({ placeholder }) => {
+  return (
+    <>
+      <div className={style.boxtitleweb}>
+        <h2 className={style.titleweb}>{placeholder}</h2>
+        <div className={`${style.linerow} ${style.reverseline}`}>
+          <div className={style.linerowleft}></div>
+          <div className={style.linerowright}></div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export { TitleWebLineShortRight, TitleWebLineShortLeft };
