@@ -15,8 +15,8 @@ export default function Header() {
       }`}
     >
       <div className={style.contentheader}>
-        <Link href="/" aria-label="Cat Quantum Design">
-          <a>
+        <Link href="/">
+          <a aria-label="Cat Quantum Design">
             <Logo className={style.logo} />
           </a>
         </Link>

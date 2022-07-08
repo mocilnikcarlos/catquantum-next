@@ -14,12 +14,14 @@
     margin: auto;
     min-height: inherit;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
 .scrollon {
-    background: $background;
+    // background: $background;
+    backdrop-filter: blur(20px);
     box-shadow: 0 3px 10px $dark;
     transition: 200ms ease-in-out;
 }
@@ -31,20 +33,20 @@
 
 // Logo
 .logo text {
-    transition: 300ms ease-in-out;
+    transition: 200ms ease-in-out;
 
     &:hover {
         filter: drop-shadow(0 0 5px $blue);
-        transition: 300ms ease-in-out;
+        transition: 200ms ease-in-out;
     }
 }
 
 .logo:hover g g:nth-child(4) {
-    animation: myAnim 1s ease 0s infinite alternate forwards;
+    animation: lighting 1s ease 0s infinite alternate forwards;
     ;
 }
 
-@keyframes myAnim {
+@keyframes lighting {
     0% {
         animation-timing-function: ease-out;
         opacity: 1;
@@ -68,5 +70,28 @@
     45% {
         animation-timing-function: ease-out;
         opacity: 1;
+    }
+}
+
+.listlink {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.063em;
+}
+
+.linknav {
+    background-color: transparent;
+    padding: .3em .938em;
+    border-radius: 4px;
+    font-size: 1.25em;
+    font-family: $text;
+    font-weight: $regular;
+    color: $white;
+    letter-spacing: 1px;
+    transition: 200ms ease;
+
+    &:hover {
+        background-color: $transparentWhite;
+        transition: background-color 200ms ease;
     }
 }
