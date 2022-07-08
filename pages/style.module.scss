@@ -17,3 +17,17 @@
     display: flex;
     gap: 3.125em;
 }
+
+.workux {
+    padding-top: 11.063em;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.125em;
+}
+
+.boxcards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8.75em 0;
+}

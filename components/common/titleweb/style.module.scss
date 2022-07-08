@@ -1,0 +1,44 @@
+@import "../../../sass/styles/colors";
+@import "../../../sass/styles/fonts";
+
+.boxtitleweb {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.75em;
+}
+
+.titleweb {
+    font-size: 2.875em;
+    font-family: $title;
+    font-weight: $bold;
+    color: $white;
+}
+
+.linerow {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap: .656em;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.linerowleft {
+    width: 3.125em;
+    height: .313em;
+    border-radius: 1.25em;
+    background-color: $red;
+}
+
+.linerowright {
+    width: 1.25em;
+    height: .313em;
+    border-radius: 1.25em;
+    background-color: $red;
+}
