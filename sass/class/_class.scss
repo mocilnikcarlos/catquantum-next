@@ -1,0 +1,10 @@
+@import "../styles/colors";
+@import "../styles/fonts";
+
+.textweb {
+    font-size: 18px;
+    font-family: $text;
+    font-weight: $light;
+    color: $gray;
+    line-height: 35px;
+}

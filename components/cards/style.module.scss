@@ -1,0 +1,130 @@
+@import "../../sass/styles/colors";
+@import "../../sass/styles/fonts";
+@import "../../sass/styles/colorstyle";
+
+.boxcircledesign {
+    width: 18.75em;
+    height: 13.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contentcircledesign {
+    position: relative;
+
+    &:hover .iconcircle {
+        width: 18.75em;
+        height: 13.75em;
+        border-radius: .75em;
+
+        &::after,
+        &::before {
+            border-radius: .75em;
+            transition: all 500ms ease;
+            transition-delay: 200ms;
+        }
+    }
+
+    &:hover .icon {
+        transform: translateY(-3em);
+        transition: all 500ms ease;
+        transition-delay: 200ms;
+    }
+
+    &:hover .titlecircleup {
+        z-index: 1;
+        transition: all 500ms ease;
+        transition-delay: 300ms;
+        opacity: 1;
+    }
+
+    &:hover .titlecircledown {
+        z-index: 1;
+        transition: all 500ms ease;
+        transition-delay: 200ms;
+        opacity: 0;
+        bottom: 4em;
+    }
+}
+
+.iconcircle {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    z-index: 0;
+    transition: all 500ms ease;
+    transition-delay: 200ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after,
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        transition: all 500ms ease;
+        transition-delay: 200ms;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(to top, $red, $blue);
+        background-size: 400%;
+        filter: blur(2px);
+    }
+
+    &::after {
+        background: $background;
+        border: 1px solid transparent;
+        background-clip: padding-box;
+        box-shadow: $shadowBlack;
+    }
+}
+
+.icon {
+    position: absolute;
+    z-index: 1;
+    transition: all 500ms ease;
+    transition-delay: 200ms;
+}
+
+.titlecircle {
+    width: 16.063em;
+    height: fit-content;
+    left: calc(50% - 8.031em);
+    transition: all 500ms ease;
+    text-align: center;
+    pointer-events: none;
+}
+
+.titlecircleup {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition-delay: 100ms;
+    bottom: 2.5em;
+    font-size: 1em;
+    font-family: $text;
+    font-weight: $light;
+    color: $white;
+}
+
+.titlecircledown {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    bottom: -3em;
+    transition-delay: 200ms;
+    font-size: 1.5em;
+    font-family: $text;
+    font-weight: $light;
+    color: $white;
+}
