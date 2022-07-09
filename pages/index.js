@@ -116,35 +116,38 @@ export default function Home() {
       </Section>
 
       <Section>
-        <Article>
-          <div className={style.boxcardsdemofirst}>
-            <FirstCardDesigner
-              title="dasdasdasd"
-              text="asdasdasdasdasdas"
-              src="prev01"
-            />
-            <FirstCardDesigner
-              title="dasdasdasd"
-              text="asdasdasdasdasdas"
-              src="prev02"
-            />
-          </div>
-          <div className={style.boxcardsdemosecond}>
-            <SecondCardDesigner
-              title="dasdasdasd"
-              text="asdasdasdasdasdas"
-              src="bghero"
-            />
-            <SecondCardDesigner
-              title="dasdasdasd"
-              text="asdasdasdasdasdas"
-              src="prev02"
-            />
-            <SecondCardDesigner
-              title="dasdasdasd"
-              text="asdasdasdasdasdas"
-              src="prev01"
-            />
+        <Article className={style.boxarticle}>
+          <TitleWebLineShortRight placeholder="Pasión profesional" />
+          <div className={style.boxsdemodesign}>
+            <div className={style.boxcardsdemofirst}>
+              <FirstCardDesigner
+                title="dasdasdasd"
+                text="asdasdasdasdasdas"
+                src="prev01"
+              />
+              <FirstCardDesigner
+                title="dasdasdasd"
+                text="asdasdasdasdasdas"
+                src="prev02"
+              />
+            </div>
+            <div className={style.boxcardsdemosecond}>
+              <SecondCardDesigner
+                title="dasdasdasd"
+                text="asdasdasdasdasdas"
+                src="bghero"
+              />
+              <SecondCardDesigner
+                title="dasdasdasd"
+                text="asdasdasdasdasdas"
+                src="prev02"
+              />
+              <SecondCardDesigner
+                title="dasdasdasd"
+                text="asdasdasdasdasdas"
+                src="prev01"
+              />
+            </div>
           </div>
         </Article>
       </Section>

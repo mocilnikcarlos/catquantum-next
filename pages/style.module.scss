@@ -34,8 +34,7 @@
 
 .boxcardsbetterux {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
     min-height: 17.125em;
@@ -43,6 +42,12 @@
     & :nth-child(2){
         align-self: flex-end;
     }
+}
+
+.boxsdemodesign {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3.75em 0;
 }
 
 .boxcardsdemofirst {

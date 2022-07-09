@@ -53,8 +53,8 @@ const FirstCardDesigner = ({ title, text, src }) => {
         </div>
         <div className={img[`${src}`]}></div>
         <div className={img.textcard}>
-          <span className={img.titleupcard}>{title}</span>
-          <span className={img.titledowncard}>{text}</span>
+          <h3 className={img.titleupcard}>{title}</h3>
+          <p className={img.titledowncard}>{text}</p>
         </div>
       </div>
     </>
@@ -72,8 +72,8 @@ const SecondCardDesigner = ({ title, text, src }) => {
         </div>
         <div className={img[`${src}`]}></div>
         <div className={img.textcard}>
-          <span className={img.titleupcard}>{title}</span>
-          <span className={img.titledowncard}>{text}</span>
+          <h3 className={img.titleupcard}>{title}</h3>
+          <p className={img.titledowncard}>{text}</p>
         </div>
       </div>
     </>
