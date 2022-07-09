@@ -44,3 +44,15 @@
         align-self: flex-end;
     }
 }
+
+.boxcardsdemofirst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.boxcardsdemosecond {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

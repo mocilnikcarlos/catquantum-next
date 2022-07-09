@@ -3,7 +3,12 @@ import GlitchDesigner from "components/other/designerglitch";
 import InfoHero from "components/other/infohero";
 import MyName from "components/other/myname";
 import Section from "components/sections";
-import { CardLines, CardWork } from "components/cards";
+import {
+  CardLines,
+  CardWork,
+  FirstCardDesigner,
+  SecondCardDesigner,
+} from "components/cards";
 import {
   TitleWebLineShortLeft,
   TitleWebLineShortRight,
@@ -108,6 +113,40 @@ export default function Home() {
           </div>
         </Article>
         <Ark />
+      </Section>
+
+      <Section>
+        <Article>
+          <div className={style.boxcardsdemofirst}>
+            <FirstCardDesigner
+              title="dasdasdasd"
+              text="asdasdasdasdasdas"
+              src="prev01"
+            />
+            <FirstCardDesigner
+              title="dasdasdasd"
+              text="asdasdasdasdasdas"
+              src="prev02"
+            />
+          </div>
+          <div className={style.boxcardsdemosecond}>
+            <SecondCardDesigner
+              title="dasdasdasd"
+              text="asdasdasdasdasdas"
+              src="bghero"
+            />
+            <SecondCardDesigner
+              title="dasdasdasd"
+              text="asdasdasdasdasdas"
+              src="prev02"
+            />
+            <SecondCardDesigner
+              title="dasdasdasd"
+              text="asdasdasdasdasdas"
+              src="prev01"
+            />
+          </div>
+        </Article>
       </Section>
     </>
   );
