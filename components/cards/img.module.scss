@@ -1,0 +1,217 @@
+@import "../../sass/styles/colors";
+@import "../../sass/styles/fonts";
+@import "../../sass/styles/colorstyle";
+@import "../../sass/mixins/mixins";
+
+$imgCard: (
+    "prev01": "prev01",
+    "prev02": "prev02",
+    "bghero": "bghero"
+);
+
+// First card
+.imgcardfirst{
+    width: 39.375em;
+    height: 29em;
+    border-radius: .75em;
+    border: 2px solid $transparentWhite;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    &:before {
+        transition: 300ms ease;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        background-color: $transparentBlack;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:after {
+        transition: 400ms ease 200ms;
+        content: "";
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        right: .5em;
+        bottom: .5em;
+        border-radius: inherit;
+        background: $black;
+        opacity: 0;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:hover::before {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    &:hover::after {
+        opacity: .35;
+        transform: scale(1);
+    }
+
+    &:hover {
+        @each $name, $key in $imgCard {
+            .#{$name} {
+                filter: blur(10px);
+                transition: 300ms ease;
+            }
+        }
+    }
+
+    &:hover .boxeye {
+        transform: scale(0);
+        opacity: .5;
+        transition: 300ms ease 200ms;
+    }
+
+    &:hover .textcard {
+        bottom: 2.163em;
+        transition: 300ms ease 200ms;
+        opacity: 1;
+    }
+}
+
+.imgcardsecond {
+    width: 25em;
+    height: 30.5em;
+    border-radius: .75em;
+    border: 2px solid $transparentWhite;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &:before {
+        transition: 300ms ease;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        background-color: $transparentBlack;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:after {
+        transition: 400ms ease 200ms;
+        content: "";
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        right: .5em;
+        bottom: .5em;
+        border-radius: inherit;
+        background: $black;
+        opacity: 0;
+        transform: scale(0);
+        z-index: 1;
+    }
+
+    &:hover::before {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    &:hover::after {
+        opacity: .35;
+        transform: scale(1);
+    }
+
+    &:hover {
+        @each $name, $key in $imgCard {
+            .#{$name} {
+                filter: blur(10px);
+                transition: 300ms ease;
+            }
+        }
+    }
+
+    &:hover .boxeye {
+        transform: scale(0);
+        opacity: .5;
+        transition: 300ms ease 200ms;
+    }
+
+    &:hover .textcard {
+        bottom: 2.163em;
+        transition: 300ms ease 200ms;
+        opacity: 1;
+    }
+}
+
+// Background Img Card
+@each $name,
+$key in $imgCard {
+    .#{$name} {
+        @include classImg($key);
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        transition: 300ms ease;
+    }
+}
+
+// Icon eye
+.boxeye {
+    background-color: $black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 5.625em;
+    height: 5.625em;
+    position: absolute;
+    opacity: .72;
+    transform: scale(1);
+    transition: 300ms ease 200ms;
+    z-index: 2;
+}
+
+.iconeye {
+    position: absolute;
+    width: fit-content;
+    height: fit-content
+}
+
+// Texts in card
+.textcard {
+    position: absolute;
+    bottom: -3.75em;
+    left: 2.938em;
+    display: flex;
+    flex-direction: column;
+    gap: .438em;
+    transition: 300ms ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+.titleupcard {
+    font-size: 1.25em;
+    font-family: $title;
+    font-weight: $medium;
+    color: $white;
+}
+
+.titledowncard {
+    font-size: 1.25em;
+    font-family: $text;
+    font-weight: $light;
+    color: $gray;
+}

@@ -1,0 +1,7 @@
+@mixin classImg($props) {
+    $url: "../../public/#{$props}.jpg";
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
