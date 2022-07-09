@@ -8,4 +8,8 @@ const LineVertical = () => {
   return <div className={style.linevertical}></div>;
 };
 
-export { LineHorizontal, LineVertical };
+const Ark = () => {
+  return <div className={style.boxark}></div>;
+};
+
+export { LineHorizontal, LineVertical, Ark };

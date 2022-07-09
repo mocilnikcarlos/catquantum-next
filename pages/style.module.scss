@@ -18,16 +18,29 @@
     gap: 3.125em;
 }
 
-.workux {
+.boxarticle {
     padding-top: 11.063em;
     display: flex;
     flex-direction: column;
     padding-bottom: 3.125em;
 }
 
-.boxcards {
+.boxcardsworkdesigner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 8.75em 0;
+}
+
+.boxcardsbetterux {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 17.125em;
+
+    & :nth-child(2){
+        align-self: flex-end;
+    }
 }
