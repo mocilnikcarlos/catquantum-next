@@ -3,7 +3,11 @@ import GlitchDesigner from "components/other/designerglitch";
 import InfoHero from "components/other/infohero";
 import MyName from "components/other/myname";
 import Section from "components/sections";
-import CardWork from "components/cards";
+import { CardLines, CardWork } from "components/cards";
+import {
+  TitleWebLineShortLeft,
+  TitleWebLineShortRight,
+} from "components/common/titleweb";
 
 import Head from "next/head";
 
@@ -13,7 +17,10 @@ import UserSpeak from "assets/svg/userSpeack";
 import Idea from "assets/svg/idea";
 import DataProt from "assets/svg/dataProt";
 import AbTesting from "assets/svg/abTesting";
-import { TitleWebLineShortRight } from "components/common/titleweb";
+import Design from "assets/svg/design";
+import Pen from "assets/svg/pen";
+import Search from "assets/svg/search";
+import { Ark } from "components/figure/poligons";
 
 export default function Home() {
   return (
@@ -35,7 +42,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <Article className={style.workux}>
+        <Article className={style.boxarticle}>
           <TitleWebLineShortRight placeholder="El trabajo de un Designer UX" />
           <p className="textweb">
             En pocas palabras, un diseñador UX está encargado de lograr generar
@@ -46,7 +53,7 @@ export default function Home() {
             requisitos, ya que será este el propósito que se verá reflejado en
             el usuario.
           </p>
-          <div className={style.boxcards}>
+          <div className={style.boxcardsworkdesigner}>
             <CardWork
               title="Consultoría"
               text="Encontrar los problemas integrando análisis del producto escuchando a los usuarios"
@@ -77,6 +84,30 @@ export default function Home() {
             cantidad de tráfico.
           </p>
         </Article>
+      </Section>
+
+      <Section>
+        <Article className={style.boxarticle}>
+          <TitleWebLineShortLeft placeholder="Mejorando la experiencia del usuario" />
+          <div className={style.boxcardsbetterux}>
+            <CardLines
+              title="User Interface"
+              text="Diseños creativos, modernos a necesidad del producto. Desde sitios web, e-commerce, dashboard, etc"
+              icon={<Design />}
+            />
+            <CardLines
+              title="UX Writing"
+              text="Llega a tus usuarios con un diálogo coherente, cohesivo y atractivo. Capturalos y haz que tu marca sea fácil de recordar"
+              icon={<Pen />}
+            />
+            <CardLines
+              title="UX Research"
+              text="Búsqueda acorde a la necesidad de los usuarios, estudio exhaustivo de la competencia para brindar lo mismo y mejor de lo que ya está en el mercado"
+              icon={<Search />}
+            />
+          </div>
+        </Article>
+        <Ark />
       </Section>
     </>
   );
