@@ -13,6 +13,8 @@ import {
   TitleWebLineShortLeft,
   TitleWebLineShortRight,
 } from "components/common/titleweb";
+import { Ark } from "components/figure/poligons";
+import FormHome from "components/form/formhome";
 
 import Head from "next/head";
 
@@ -25,7 +27,6 @@ import AbTesting from "assets/svg/abTesting";
 import Design from "assets/svg/design";
 import Pen from "assets/svg/pen";
 import Search from "assets/svg/search";
-import { Ark } from "components/figure/poligons";
 
 export default function Home() {
   return (
@@ -149,6 +150,12 @@ export default function Home() {
               />
             </div>
           </div>
+        </Article>
+      </Section>
+
+      <Section>
+        <Article>
+          <FormHome />
         </Article>
       </Section>
     </>

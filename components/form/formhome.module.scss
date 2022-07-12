@@ -1,0 +1,171 @@
+@import '../../sass/styles/colors';
+@import '../../sass/styles/colorstyle';
+@import '../../sass/styles/fonts';
+
+.form {
+    background-color: seagreen;
+    width: 39.375em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.boxinputs {
+    display: flex;
+    gap: 1.875em;
+}
+
+.boxtextarea {
+    width: 100%;
+    height: 9.375em;
+}
+
+// Textarea
+.fieldsetarea {
+    position: relative;
+    width: 100%;
+    height: 12.5em;
+    border: none;
+}
+
+
+.fieldset {
+    position: relative;
+    width: 100%;
+    height: 6.25em;
+    border: none;
+}
+
+// Inputs
+.input {
+    position: absolute;
+    padding-left: .875em;
+    width: 100%;
+    height: 3.125em;
+    bottom: 1.25em;
+    background: transparent;
+    border: 2px solid $transparentWhite;
+    border-radius: .5em;
+    outline: none;
+    color: $white;
+    font-size: 1em;
+    font-family: $text;
+    transition: 200ms ease-in-out;
+
+    &:focus {
+        border: 2px solid $blue;
+        box-shadow: $shadowBlue;
+        transition: 200ms ease-in-out;
+    }
+    
+    &:focus~.legend {
+        transform: translateY(0);
+        color: $white;
+        transition: 200ms ease-in-out;
+    }
+
+    &:not(:placeholder-shown)~.legend {
+        transform: translateY(0);
+    }
+
+    &::placeholder {
+        color: transparent;
+    }
+}
+
+.legend {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    transform: translateY(43px);
+    color: $gray;
+    font-size: 1em;
+    font-family: $text;
+    font-weight: $regular;
+    cursor: text;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+
+
+.inputextarea {
+    position: absolute;
+    padding: .875em;
+    width: 100%;
+    height: 9.375em;
+    bottom: 1.25em;
+    background: transparent;
+    border: 2px solid $transparentWhite;
+    border-radius: .5em;
+    outline: none;
+    color: $white;
+    font-size: 1em;
+    font-family: $text;
+    transition: 200ms ease-in-out;
+
+    &:focus {
+        border: 2px solid $blue;
+        box-shadow: $shadowBlue;
+        transition: 200ms ease-in-out;
+    }
+    
+    &:focus~.legendarea {
+        transform: translateY(0px);
+        color: $white;
+        transition: 200ms ease-in-out;
+    }
+
+    &:not(:placeholder-shown)~.legendarea {
+        transform: translateY(0);
+    }
+
+    &::placeholder {
+        color: transparent;
+    }
+}
+
+.legendarea {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    transform: translateY(47px);
+    color: $gray;
+    font-size: 1em;
+    font-family: $text;
+    font-weight: $regular;
+    cursor: text;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+.messageerror {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    color: $red;
+    font-size: .75em;
+    font-family: $text;
+    font-weight: $regular;
+    transition: 200ms ease-in-out;
+}
+
+.errorlegend {
+    color: $red;
+}
+
+.errorinput {
+    border: 2px solid $red;
+}
+
+.successform {
+    color: $white;
+    font-size: 1.25em;
+    font-family: $text;
+    font-weight: $regular;
+    transition: 200ms ease-in-out;
+}
+
+.resize {
+    resize: none;
+}
