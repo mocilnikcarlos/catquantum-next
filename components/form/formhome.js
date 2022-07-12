@@ -27,7 +27,6 @@ export default function FormHome() {
     }
   }, [formState, reset]);
 
-  // TODO: Crear una validacion para que no agregue espaciados al comienzo
   return (
     <form onSubmit={handleSubmit(onSubmit)} ref={ref} className={formhome.form}>
       <div className={formhome.boxinputs}>
