@@ -153,11 +153,10 @@ export default function Home() {
         </Article>
       </Section>
 
-      <Section>
-        <Article>
-          <FormHome />
-        </Article>
-      </Section>
+      <div className={style.boxform}>
+        <h3 className={style.titleform}>Trabajemos juntos</h3>
+        <FormHome />
+      </div>
     </>
   );
 }
