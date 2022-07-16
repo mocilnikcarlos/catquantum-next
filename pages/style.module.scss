@@ -1,3 +1,6 @@
+@import '../sass/styles/colors';
+@import '../sass/styles/fonts';
+
 .hero {
     background-image: url("../public/bghero.jpg");
     background-position: center;
@@ -60,4 +63,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.boxform {
+    background-color: $background;
+    padding: 6.25em 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleform {
+    font-size: 1.875em;
+    font-family: $title;
+    font-weight: $bold;
+    color: $white;
 }

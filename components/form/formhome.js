@@ -1,11 +1,14 @@
 // import { useEffect } from "react";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+
+import Button from "components/botons";
+
 import controlForm from "./service";
 import validationForm from "./validation";
+import ErrorMessage from "./errorMessage";
 
 import formhome from "./formhome.module.scss";
-import ErrorMessage from "./errorMessage";
 
 export default function FormHome() {
   const {
@@ -104,15 +107,17 @@ export default function FormHome() {
           ) : null}
         </fieldset>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      {result ? (
-        <p className={formhome.successform}>Mensaje enviado exitosamente</p>
-      ) : (
-        <button type="submit">enviar</button>
-      )}
+
+      <div className={formhome.buttontext}>
+        {result ? (
+          <p className={formhome.successform}>
+            Gracias por ponerte en contacto conmigo. Estaré respondiéndote lo
+            más rápido posible.
+          </p>
+        ) : (
+          <Button type="submit">Enviar mensaje</Button>
+        )}
+      </div>
     </form>
   );
 }
