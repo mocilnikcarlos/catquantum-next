@@ -12,4 +12,13 @@ const Ark = () => {
   return <div className={style.boxark}></div>;
 };
 
-export { LineHorizontal, LineVertical, Ark };
+const FigFooter = () => {
+  return (
+    <div className={style.boxfigfooter}>
+      <div className={style.rectangleleft}></div>
+      <div className={style.rectangleright}></div>
+    </div>
+  );
+};
+
+export { LineHorizontal, LineVertical, Ark, FigFooter };
