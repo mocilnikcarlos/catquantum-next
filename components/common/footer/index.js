@@ -36,7 +36,7 @@ const getLinkSocial = [
   },
   {
     id: 4,
-    url: "www.google.com",
+    url: "https://wa.me/543487345472/?text=Quiero%20ponerme%20en%20contacto%20con%20usted",
     tag: "whats",
     tooltip: "3487 345472",
     src: <WhatsAppFooter />,
