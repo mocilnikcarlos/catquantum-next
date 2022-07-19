@@ -1,3 +1,4 @@
+import Footer from "components/common/footer";
 import Header from "components/common/header";
 
 // import Link from "next/link";
@@ -6,7 +7,7 @@ export default function AppLayout({ children }) {
     <>
       <Header />
       <main>{children}</main>
-      {/* ACA VA EL FOOTER */}
+      <Footer />
     </>
   );
 }
