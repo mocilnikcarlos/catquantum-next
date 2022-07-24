@@ -8,7 +8,7 @@ import Logo from "assets/svg/logo";
 import WhatsAppFooter from "assets/svg/whatsappfooter";
 
 import { FigFooter } from "components/figure/poligons";
-import IconSocialFooter from "../socialicon";
+import IconSocialFooter from "../socialiconfooter";
 
 import style from "./style.module.scss";
 
