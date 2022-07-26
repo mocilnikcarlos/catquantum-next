@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
-import Button from "components/botons";
+import { ButtonForm } from "components/botons";
 
 import controlForm from "./service";
 import validationForm from "./validation";
@@ -115,7 +115,7 @@ export default function FormHome() {
             más rápido posible.
           </p>
         ) : (
-          <Button type="submit">Enviar mensaje</Button>
+          <ButtonForm type="submit">Enviar mensaje</ButtonForm>
         )}
       </div>
     </form>

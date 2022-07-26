@@ -1,0 +1,17 @@
+.service {
+    padding-top: 177px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentservice {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.boxbuttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
